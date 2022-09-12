@@ -10,7 +10,6 @@ body {
   font-family: Raleway, sans-serif;
   font-size: 14px;
   background-color: hsl(229deg, 57%, 11%);
-  color: white;
 }
 
 .desktop__bg {
@@ -79,11 +78,7 @@ body {
   border-radius: 8px;
 }
 
-.icon__bg + .icon__bg {
-  margin-left: 15px;
-}
-
-.card__data p {
+.card__data > p {
   color: hsl(243deg, 100%, 93%);
 }
 
@@ -122,11 +117,11 @@ body {
 
 .data__number {
   font-size: 2.5rem;
-  color: hsl(229deg, 57%, 11%) !important;
+  color: hsl(229deg, 57%, 11%);
 }
 
 .data__label {
-  color: hsl(229deg, 7%, 55%) !important;
+  color: hsl(229deg, 7%, 55%);
   margin-left: 1ch;
 }
 
@@ -139,7 +134,7 @@ body {
 
 .progress {
   height: calc(1rem - 2px);
-  width: 70%;
+  width: 81.5%;
   background: linear-gradient(to right, hsl(6deg, 100%, 80%), hsl(335deg, 100%, 65%));
   border-radius: calc(1rem - 2px);
   position: relative;
@@ -154,9 +149,10 @@ body {
   z-index: 1;
   height: calc(1rem - 4px);
   width: calc(1rem - 4px);
+  cursor: pointer;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   .mobile__bg {
     display: none;
   }
@@ -186,7 +182,6 @@ body {
   }
   .data__container {
     width: 100%;
-    height: 1px;
   }
   .remaining__data {
     top: -180px;
