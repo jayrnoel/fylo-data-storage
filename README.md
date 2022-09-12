@@ -38,8 +38,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/jayrnoel/fylo-data-storage](https://github.com/jayrnoel/fylo-data-storage)
+- Live Site URL: [https://spectacular-platypus-acc6f5.netlify.app/](https://spectacular-platypus-acc6f5.netlify.app/m)
 
 ## My process
 
@@ -81,6 +81,18 @@ For example:
 
 Since I started to use 1rem as the height of the progress bar, I needed to deduct the amount of padding for the children elements.
 Instead of using fixed values, I just used `calc()` function to figure out the size of the children elements, since rem is a relative value and pixels are fixed value it is harder to convert from one to another.
+
+Another scenario when I used `calc()` is when putting the remaining\_\_data div to the right of its parent. For some reason, `right: 0` doesn't work very well when resizing windows. It moves away from the origin point.
+
+```css
+.remaining__data {
+  top: -180px;
+  left: calc(100% - 180px);
+}
+```
+
+My solution is just to use the left property and set it to 100% then deduct the width of the remaining\_\_data div and it works!
+The div stays on the right of its parent div.
 
 ### Continued development
 
