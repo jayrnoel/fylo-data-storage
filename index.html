@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fylo</title>
+  </head>
+  <body>
+    <img src="./images/bg-mobile.png" alt="background" class="mobile__bg" />
+    <img src="./images/bg-desktop.png" alt="background" class="desktop__bg" />
+    <div class="container">
+      <main class="cards">
+        <section class="card__brand">
+          <img src="./images/logo.svg" alt="" class="logo" />
+          <div class="card__icons">
+            <div class="icon__bg">
+              <img
+                src="./images/icon-document.svg"
+                alt="document"
+                class="card__icon"
+              />
+            </div>
+            <div class="icon__bg">
+              <img
+                src="./images/icon-folder.svg"
+                alt="folder"
+                class="card__icon"
+              />
+            </div>
+            <div class="icon__bg">
+              <img
+                src="./images/icon-upload.svg"
+                alt="upload"
+                class="card__icon"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="card__data">
+          <p>You've used <span class="bold">815 GB</span> of your storage</p>
+          <div class="data__consumption">
+            <div class="progress">
+              <div class="thumb"></div>
+            </div>
+          </div>
+          <div class="data__labels">
+            <p class="data__min">0 GB</p>
+            <p class="data__max">1000 GB</p>
+          </div>
+          <div class="data__container">
+            <div class="remaining__data">
+              <p class="data__number bold">185</p>
+              <p class="data__label bold">GB Left</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
